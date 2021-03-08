@@ -45,11 +45,13 @@ class MainActivity : Activity() {
         timer = Timer()
         timer?.schedule(object : TimerTask(){
             override fun run() {
-                bgTrafficLight?.setImageResource(imageArray[counter])
-                counter++
-                if (counter == 3) counter = 0
+               runOnUiThread(){
+                   bgTrafficLight?.setImageResource(imageArray[counter])
+                   counter++
+                   if (counter == 3) counter = 0
+               }
             }
 
-        }, 0, 1000)
+        }, 0, 800)
     }
 }
