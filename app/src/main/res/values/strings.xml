@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Traffic_light</string>
+    <string name="app_name">Mini Apps</string>
+    <string name="image_traffic">image traffic</string>
+    <string name="btn_start_stop">btn start/stop</string>
+    <string name="btn_traffic_light">Traffic Light</string>
+    <string name="play_sound">Play Sound</string>
 </resources>
